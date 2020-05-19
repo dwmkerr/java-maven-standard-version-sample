@@ -2,7 +2,9 @@
 
 This simple module demos how to use Conventional Commits, Git Hooks to enforce Conventional Commits and Semantic Versioning in a Java project built with Maven.
 
-There is a blog post which shows how this works at [TODO](TODO)
+There is a blog post which shows how this works at [dwmkerr.com: Supercharge your Java Projects with Conventional Commits, Semantic Versioning and Semantic Releases](https://dwmkerr.com/conventional-commits-and-semantic-versioning-for-java/)
+
+Also, if you want to see what the code looks like _after_ we've added the changelog etc, check the [`release`](https://github.com/dwmkerr/java-maven-standard-version-sample/tree/release) branch.
 
 ## Developer Guide
 
