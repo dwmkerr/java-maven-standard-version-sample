@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/dwmkerr/java-maven-standard-version-sample/compare/v0.1.0...v0.1.1) (2020-05-19)
+
+
+### Bug Fixes
+
+* **goodbye:** fix a typo in the goodbye output ([b14bd5f](https://github.com/dwmkerr/java-maven-standard-version-sample/commit/b14bd5f914cda6b81cf5a488602fa187ba28cb65))
+
 ## 0.1.0 (2020-05-19)
 
 
