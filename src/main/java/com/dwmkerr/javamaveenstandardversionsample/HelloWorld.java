@@ -9,5 +9,5 @@ public class HelloWorld {
         return "Hello, World!";
     }
 
-    public String Goodbye() { return "Goodbye, Creul World!"; }
+    public String Goodbye() { return "Goodbye, Cruel World!"; }
 }
