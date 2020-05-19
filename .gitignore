@@ -1,0 +1,45 @@
+# Git Ignore file for Java artifacts, editor artifacts, intermediate files, generated files etc.
+
+HELP.md
+.DS_Store
+target/classes
+target/maven-archiver
+target/maven-status
+target/site
+target/surefire-reports
+target/test-classes
+target/jacoco.exec
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+### Eclipse JDT ###
+jdt.**
+.metadata
+src/main/resources/META-INF/
+artifacts/
+target/

@@ -1,0 +1,50 @@
+# Java Maven Standard Version Sample
+
+This simple module demos how to use Conventional Commits, Git Hooks to enforce Conventional Commits and Semantic Versioning in a Java project built with Maven.
+
+There is a blog post which shows how this works at [TODO](TODO)
+
+## Developer Guide
+
+Make sure you have setup your local Git Hooks:
+
+```sh
+git config core.hooksPath .githooks
+```
+
+This will make sure your commit messages follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/).
+
+Here's some handly commands:
+
+| Command | Usage |
+|---------|-------|
+| `./mvnw -B verify` | Run the tests. |
+| `./mvnw -B package` | Run the builds. |
+
+## Semantic Versioning
+
+This project uses `standard-release` to update the version in the `pom.xml` file from the changes in the history and to create the `CHANGELOG.md` file.
+
+To setup semantic versioning and create the baseline changelog, run:
+
+```sh
+npx dwmkerr/standard-version --first-release --packageFiles pom.xml --bumpFiles pom.xml
+```
+
+Now any time you want to cut a new release, run:
+
+```sh
+npx dwmkerr/standard-version --packageFiles pom.xml --bumpFiles pom.xml
+```
+
+This will:
+
+- Update the `CHANGELOG.md`
+- Update the version number based on the commit history
+- Create a git tag with the new version number
+
+Finally, just push the tag to trigger a deployment of the new version:
+
+```sh
+git push --follow-tags
+```
