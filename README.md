@@ -50,3 +50,7 @@ Finally, just push the tag to trigger a deployment of the new version:
 ```sh
 git push --follow-tags
 ```
+
+## Major Version Zero
+
+As per the spec: https://semver.org/spec/v2.0.0.html#doesnt-this-discourage-rapid-development-and-fast-iteration please note that Major Version 0 (i.e. `0.x.y`) is for about rapid development. Major changes do _not_ increase the major version number - only the minor version number. This is in alignment with the semver spec, that reserves major version zero for rapid changes that are expected to break the API.
