@@ -10,4 +10,10 @@ class HelloWorldTest {
         HelloWorld helloWorld = new HelloWorld();
         assertEquals("Hello, World!", helloWorld.Hello());
     }
+
+    @Test
+    public void expectGoodbyeToGiveCorrectGreeting() {
+        HelloWorld helloWorld = new HelloWorld();
+        assertEquals("Goodbye, Cruel World!", helloWorld.Goodbye());
+    }
 }
